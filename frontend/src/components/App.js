@@ -201,7 +201,7 @@ function App() {
       authApi
         .checkToken(token)
         .then(values => {
-          setCurrentEmail(values.data.email);
+          setCurrentEmail(values.email);
           setLoggedIn(true);
           navigate('/');
         })
