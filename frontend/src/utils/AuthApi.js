@@ -40,6 +40,9 @@ class AuthApi {
   }
 }
 
-const authApi = new AuthApi({ baseUrl: 'https://auth.nomoreparties.co' });
+const authApi = new AuthApi({
+  //baseUrl: 'https://auth.nomoreparties.co'
+  baseUrl: 'http://localhost:3001'
+});
 
 export default authApi;

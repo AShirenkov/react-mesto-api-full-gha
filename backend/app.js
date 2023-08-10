@@ -10,6 +10,7 @@ const route = require("./middlewares/route");
 
 const handlerErrors = require("./middlewares/handlerErrors");
 const { requestLogger, errorLogger } = require("./middlewares/logger");
+const cors = require("./middlewares/cors");
 
 const { PORT = 3001 } = process.env;
 
@@ -20,6 +21,8 @@ const app = express();
 app.use(bodyParser.json()); // для собирания JSON-формата
 app.use(bodyParser.urlencoded({ extended: true })); // для приёма веб-страниц внутри POST-запроса
 app.use(requestLogger); // подключаем логгер запросов
+
+app.use(cors);
 
 app.use(route);
 app.use(errorLogger);
