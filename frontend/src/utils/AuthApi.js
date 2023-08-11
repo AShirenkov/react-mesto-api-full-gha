@@ -41,8 +41,8 @@ class AuthApi {
 }
 
 const authApi = new AuthApi({
-  //baseUrl: 'https://api.ashir84.students.nomoreparties.co'
-  baseUrl: 'http://localhost:3001'
+  baseUrl: 'https://api.ashir84.students.nomoreparties.co'
+  //baseUrl: 'http://localhost:3001'
 });
 
 export default authApi;
