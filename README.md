@@ -10,7 +10,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.93.68
+IP 51.250.93.68
 
 Frontend https://ashir84.students.nomoreparties.co
 
