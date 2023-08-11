@@ -41,7 +41,7 @@ class AuthApi {
 }
 
 const authApi = new AuthApi({
-  //baseUrl: 'https://auth.nomoreparties.co'
+  //baseUrl: 'https://api.ashir84.students.nomoreparties.co'
   baseUrl: 'http://localhost:3001'
 });
 

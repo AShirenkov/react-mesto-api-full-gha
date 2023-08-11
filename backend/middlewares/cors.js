@@ -1,7 +1,7 @@
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCors = [
-  //'https://praktikum.tk',
-  //'http://praktikum.tk',
+  "https://ashir84.students.nomoreparties.co",
+  "http://ashir84.students.nomoreparties.co",
   "http://localhost:3000",
 ];
 const DEFAULT_ALLOWED_METHODS = "GET,HEAD,PUT,PATCH,POST,DELETE";
