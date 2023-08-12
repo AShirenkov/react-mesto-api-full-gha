@@ -1,21 +1,21 @@
-const express = require("express");
-require("dotenv").config();
-const bodyParser = require("body-parser");
+const express = require('express');
+require('dotenv').config();
+const bodyParser = require('body-parser');
 // Слушаем 3000  порт
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const { errors } = require("celebrate");
+const { errors } = require('celebrate');
 
-const route = require("./middlewares/route");
+const route = require('./middlewares/route');
 
-const handlerErrors = require("./middlewares/handlerErrors");
-const { requestLogger, errorLogger } = require("./middlewares/logger");
-const cors = require("./middlewares/cors");
+const handlerErrors = require('./middlewares/handlerErrors');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
+const cors = require('./middlewares/cors');
 
 const { PORT = 3000 } = process.env;
 
 // подключаемся к серверу mongo
-mongoose.connect("mongodb://127.0.0.1:27017/mestodb", {});
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
 
 const app = express();
 app.use(bodyParser.json()); // для собирания JSON-формата
