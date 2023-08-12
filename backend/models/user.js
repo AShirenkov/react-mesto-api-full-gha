@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
 
     minlength: 2,
     maxlength: 30,
-    default: 'AShir84',
+    default: 'Жак-Ив Кусто',
   },
   about: {
     // информация о пользователе, строка от 2 до 30 символов, обязательное поле;
@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
 
     minlength: 2,
     maxlength: 30,
-    default: 'Студент Я.Практикум',
+    default: 'Исследователь',
   },
   avatar: {
     // ссылка на аватарку, строка, обязательное поле.
@@ -43,7 +43,8 @@ const userSchema = new mongoose.Schema({
       message: 'Неправильный формат ссылки',
     },
 
-    default: 'https://klike.net/uploads/posts/2019-03/1551514046_26.jpg',
+    default:
+      'https://pictures.s3.yandex.net/resources/jacques-cousteau_1604399756.png',
   },
 });
 
