@@ -1,7 +1,7 @@
 const express = require("express");
 require("dotenv").config();
 const bodyParser = require("body-parser");
-// Слушаем 3000 порт
+// Слушаем 3000  порт
 const mongoose = require("mongoose");
 
 const { errors } = require("celebrate");
